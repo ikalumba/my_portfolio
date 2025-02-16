@@ -41,7 +41,18 @@ const StarryBackground = () => {
     animate();
   }, []);
 
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full" />;
+  return (
+    <div className="relative w-full h-screen">
+      {/* Canvas for Star Animation */}
+      <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full" />
+      
+      {/* Overlay Text */}
+      <div className="starry-text absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+        <h1 className="text-4xl font-bold">Isaac Kalumba</h1>
+        <p className="text-lg mt-2">Software Engineer | Problem Solver | Lifelong learner</p>
+      </div>
+    </div>
+  );
 };
 
 export default StarryBackground;

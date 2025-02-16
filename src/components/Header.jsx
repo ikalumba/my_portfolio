@@ -2,7 +2,7 @@
 function Header() {
   return (
     <header className="header">
-      <h1>Isaac Kalumba</h1>
+      <h1>Welcome!</h1>
       <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
